@@ -28,7 +28,7 @@ public class GameButtons {
 		
 		Button button = new Button();
 		button.setMinSize(50, 40);
-		if (data.trim().equals("")) {  // ako 'data' ne sadrzi nijedan karakter
+		if (data.trim().isEmpty()) {  // ako 'data' ne sadrzi nijedan karakter
 			button.setVisible(false); // napravi se nevidljivo dugme
 			button.setDisable(true); // koje je onemoguceo
 		}
